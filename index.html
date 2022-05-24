@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Telegram: Contact @DefiNightclub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="telegram.css?230" rel="stylesheet" media="screen" />
+  </head>
+  <body class="no_transition">
+    <div class="tgme_background_wrap">
+      <canvas
+        id="tgme_background"
+        class="tgme_background default"
+        width="50"
+        height="50"
+        data-colors="84b2b8,6e9bb5,4f72b8,4f72b8"
+      ></canvas>
+      <div class="tgme_background_pattern default"></div>
+    </div>
+    <script src="tgwallpaper.min.js?3"></script>
+    <script type="text/javascript">
+      var tme_bg = document.getElementById("tgme_background");
+      if (tme_bg) {
+        TWallpaper.init(tme_bg);
+        TWallpaper.animate(true);
+        window.onfocus = function () {
+          TWallpaper.update();
+        };
+      }
+      document.body.classList.remove("no_transition");
+    </script>
+  </body>
+</html>
